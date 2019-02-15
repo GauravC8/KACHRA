@@ -8,6 +8,8 @@ public class ThrowEx extends Exception
 	ThrowEx(String str){super(str);}
 	
 	public static void main(String[] args) {
+		
+		
 		try {
 			System.out.println("Account No:" + "\t"+"CUSTOMER"+"\t"+"BALANCE");
 			for(int i=0;i<5;i++)
