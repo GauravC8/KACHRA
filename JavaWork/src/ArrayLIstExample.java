@@ -1,7 +1,5 @@
-
 import java.util.ArrayList;
 import java.util.List;
-
 class Book
 {
 	int id,quantity;
@@ -14,8 +12,6 @@ class Book
 		this.author = author;
 		this.publisher = publisher;
 	}
-	
-	
 }
 public class ArrayLIstExample {
 
@@ -30,7 +26,5 @@ public class ArrayLIstExample {
 		{
 			System.out.println(b.id + " " + b.name+ " " +b.author+ " " +b.publisher+ " " +b.quantity);
 		}
-		
 	}
-
 }
