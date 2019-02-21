@@ -1,4 +1,7 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 public class HashMapDemo {
 
@@ -25,7 +28,7 @@ public class HashMapDemo {
 		}
 		System.out.println();
 		// Deposit 1000 into Jim's account
-		double balance = ((Double) hm.get("Jim")).doubleValue();
+		double balance = hm.get("Jim").doubleValue();
 		hm.put("Jim", new Double(balance + 1000));
 		System.out.println("Jim's new balance: " + hm.get("Jim"));
 	}

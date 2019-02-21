@@ -1,5 +1,5 @@
 //diamond pattern
-class pattern{
+class pattern {
 	public static void main(String[] agrs) {
 		int j, i;
 		for (j = 0; j <= 10; j++) {

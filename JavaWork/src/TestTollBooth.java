@@ -1,9 +1,10 @@
 abstract class Truck {
 	int axles = 0;
 	int total_weight = 0;
+
 	public void displayData() {
 		System.out.println("Number of axles " + axles);
-		System.out.println("Total weigth of truck " + total_weight );
+		System.out.println("Total weigth of truck " + total_weight);
 	}
 }
 
@@ -11,7 +12,8 @@ abstract class TollBooth {
 	static int total_number_of_trucks = 0;
 	static int total_since_last_collection = 0;
 
-	public void calculateToll(Truck t1) {	}
+	public void calculateToll(Truck t1) {
+	}
 
 	public void displayData() {
 	}
@@ -46,9 +48,9 @@ class AlleghenyTollBooth extends TollBooth {
 		total_since_last_collection += total;
 		total_number_of_trucks++;
 		System.out.println("....................@@@@@@@@@@@@@@@....................");
-		System.out.println("No of axles "+ax);
-		System.out.println("No of weight "+weight);
-		System.out.println("Toll due of truck "+total);
+		System.out.println("No of axles " + ax);
+		System.out.println("No of weight " + weight);
+		System.out.println("Toll due of truck " + total);
 		System.out.println("....................@@@@@@@@@@@@@@@....................");
 	}
 
@@ -61,7 +63,7 @@ class AlleghenyTollBooth extends TollBooth {
 	}
 }
 
-class TestTollBooth{
+class TestTollBooth {
 	public static void main(String[] args) {
 		TollBooth booth = new AlleghenyTollBooth();
 
