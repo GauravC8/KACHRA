@@ -1,3 +1,5 @@
+//comparatorDemo
+
 import java.util.Comparator;
 
 public class StudentComparator {
@@ -14,7 +16,7 @@ public class StudentComparator {
 	// Used to print student details in main()
 	public String toString() {
 		return this.rollno + " " + this.name + " " + this.address;
-	}
+	} 
 }
 
 class Sortbyroll implements Comparator<StudentComparator> {
