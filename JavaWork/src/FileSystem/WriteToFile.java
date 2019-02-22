@@ -16,9 +16,7 @@ public class WriteToFile {
 			br.write("\n");
 			br.write("Hobert");
 			br.close();
-			System.out.println("Successfully written to file");
-			
-			
+			System.out.println("Successfully written to file");			
 		}catch(Exception e)
 		{
 			e.printStackTrace();
