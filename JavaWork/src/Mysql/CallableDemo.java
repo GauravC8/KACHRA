@@ -7,7 +7,7 @@ public class CallableDemo {
 	Connection conn;
 	ResultSet rs;
 
-	//creating the connection
+	// creating the connection
 	void createConnection() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -17,12 +17,12 @@ public class CallableDemo {
 		}
 	}
 
-	//getting dataset using procedure
+	// getting dataset using procedure
 	public void getSkills(int candidateId) {
-		String query = "{call get_candidate_skill(?)}";  //Initializing the query for procedure
+		String query = "{call get_candidate_skill(?)}"; // Initializing the query for procedure
 		ResultSet rs;
 		try {
-			CallableStatement smt = conn.prepareCall(query);  //calling the procedure
+			CallableStatement smt = conn.prepareCall(query); // calling the procedure
 			smt.setInt(1, candidateId);
 			rs = smt.executeQuery();
 			while (rs.next()) {
