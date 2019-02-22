@@ -2,7 +2,8 @@ package FileSystem;
 
 import java.io.*;
 
-//This java example source code demonstrates the use of mark() method of BufferedReader class. Basically we mark the stream and use the reset method to go back to the marked index.
+//mark() method of BufferedReader class. 
+//Basically we mark the stream and use the reset method to go back to the marked index.
 
 
 public class BufferedReaderMarks {
