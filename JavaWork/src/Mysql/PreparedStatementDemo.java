@@ -39,7 +39,5 @@ public class PreparedStatementDemo {
 		{
 			e.printStackTrace();
 		}
-
 	}
-
 }
