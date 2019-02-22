@@ -13,7 +13,7 @@ public class WriteToFile {
 			FileWriter writer = new FileWriter("names.txt",true);
 			BufferedWriter br = new BufferedWriter(writer);
 			br.write("james");
-			br.write("\t");
+			br.write("\n");
 			br.write("Hobert");
 			br.close();
 			System.out.println("Successfully written to file");
