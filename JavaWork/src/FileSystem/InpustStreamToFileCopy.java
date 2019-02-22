@@ -18,6 +18,10 @@ public class InpustStreamToFileCopy {
 			while ((bytesRead = is.read(buffer)) != -1) {
 				os.write(buffer, 0, bytesRead);
 			}
+			System.out.println("File Copied");
+			is.close();
+			os.flush();
+			os.close();
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
