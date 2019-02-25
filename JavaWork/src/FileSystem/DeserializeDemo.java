@@ -27,7 +27,6 @@ public class DeserializeDemo {
 		System.out.println("Name :" + e.name);
 		System.out.println("Address :" + e.address);
 		System.out.println("SSN :" + e.SSN); //provide 0 because SSN is not serialized //transient
-
 	}
 
 }
