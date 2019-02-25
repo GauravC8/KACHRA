@@ -4,8 +4,8 @@ import java.util
 import java.util.List;
 
 class Playerlist {
-	ArrayList playerArray;
-	List sublistobj;
+	ArrayList<Object> playerArray;
+	List<Object> sublistobj;
 
 	public Playerlist() {
 		playerArray = new ArrayList<>();

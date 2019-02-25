@@ -1,6 +1,9 @@
 package Mysql;
 
-import java.sql.*;
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 
 public class CallableDemo {
 

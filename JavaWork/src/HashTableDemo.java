@@ -5,8 +5,8 @@ public class HashTableDemo {
 
 	public static void main(String args[]) {
 		// Create a hash map
-		Hashtable<String, Double> balance = new Hashtable();
-		Enumeration names;
+		Hashtable<String, Double> balance = new Hashtable<String, Double>();
+		Enumeration<String> names;
 		String str;
 		double bal;
 
@@ -20,7 +20,7 @@ public class HashTableDemo {
 		// Show all balances in hash table.
 		names = balance.keys();
 		while (names.hasMoreElements()) {
-			str = (String) names.nextElement();
+			str = names.nextElement();
 			System.out.println(str + ": " + balance.get(str));
 		}
 

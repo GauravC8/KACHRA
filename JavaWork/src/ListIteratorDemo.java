@@ -16,7 +16,7 @@ public class ListIteratorDemo {
 		linkedlist.add("Pune");
 
 		// Obtaining ListIterator
-		ListIterator listIt = linkedlist.listIterator();
+		ListIterator<String> listIt = linkedlist.listIterator();
 
 		// Iterating the list in forward direction
 		System.out.println("Forward iteration:");

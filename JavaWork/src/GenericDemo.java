@@ -37,12 +37,12 @@ class Pair<T> {
 public class GenericDemo {
 
 	public static void main(String[] args) {
-		Pair<String> p1 = new Pair("Happy", "Day");
+		Pair<String> p1 = new Pair<String>("Happy", "Day");
 		Scanner s = new Scanner(System.in);
 		System.out.println("Enter the two words");
 		String s1 = s.next();
 		String s2 = s.next();
-		Pair<String> inputPair = new Pair(s1, s2);
+		Pair<String> inputPair = new Pair<String>(s1, s2);
 		if (inputPair.equals(p1)) {
 			System.out.println("You type the correct pairs in correct order");
 		} else {
