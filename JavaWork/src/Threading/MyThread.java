@@ -20,7 +20,7 @@ public class MyThread extends Thread {
     }
 
     private void doDBProcessing() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(2000);
     }
     
 }

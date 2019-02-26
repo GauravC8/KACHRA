@@ -8,7 +8,7 @@ public class HeavyWorkRunnable implements Runnable {
 		try {
 			Thread.sleep(1000);
 			// Get database connection, delete unused data from DB
-			doDBProcessing();
+			doDBProcessing(); //function
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

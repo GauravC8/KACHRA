@@ -1,7 +1,6 @@
 package Threading;
 
-public class ThreadRunDemo {
-
+class ThreadRunDemo {
 	public static void main(String[] args) {
 		
 		Thread t1 = new Thread(new HeavyWorkRunnable(), "t1");

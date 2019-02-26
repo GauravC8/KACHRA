@@ -1,4 +1,4 @@
-package Mysql;
+/*package Mysql;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -21,3 +21,4 @@ class OracleConn {
 
 	}
 }
+*/
