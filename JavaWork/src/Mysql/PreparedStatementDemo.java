@@ -14,12 +14,17 @@ public class PreparedStatementDemo {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/classicmodels", "root", "root");
 			String query = "Update employees " + "set jobTitle = ? " + "where employeeNumber = ?";
+			
+			
 			PreparedStatement st = conn.prepareStatement(query);
 
 			Scanner sc = new Scanner(System.in);
 			System.out.println("Enter Employee Id ");
 			int eid = sc.nextInt();
 			sc.nextLine();
+			
+			
+			
 			System.out.println("Enter Job title ");
 			String jobt = sc.next();
 
@@ -29,6 +34,11 @@ public class PreparedStatementDemo {
 			int rowAffected = st.executeUpdate();
 			System.out.println("Row Affected " + rowAffected);
 
+			
+			
+			
+			
+			
 			jobt = "Sales Head";
 			eid = 1370;
 			st.setString(1, jobt);
