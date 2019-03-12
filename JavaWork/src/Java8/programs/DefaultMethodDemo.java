@@ -19,7 +19,8 @@ interface TestInterface
 }
 public class DefaultMethodDemo implements TestInterface{
 	 // Implementation of square abstract method
-    public void square (int a)
+    @Override
+	public void square (int a)
     {
         System.out.println(a*a);
     }

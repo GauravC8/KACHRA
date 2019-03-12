@@ -25,6 +25,7 @@ class Second extends Thread {
 		start();
 	}
 
+	@Override
 	public void run() {
 		// synchronized block using keyword synchronized
 		synchronized (fobj) {

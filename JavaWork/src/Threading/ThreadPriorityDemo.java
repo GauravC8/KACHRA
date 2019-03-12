@@ -1,7 +1,8 @@
 package Threading;
 
 class ThreadPriorityDemo extends Thread{
-	 public void run(){
+	 @Override
+	public void run(){
 	     System.out.println("Running thread is "+Thread.currentThread().getName());
 	     System.out.println("Running thread priority is "+Thread.currentThread().getPriority());
 	  }

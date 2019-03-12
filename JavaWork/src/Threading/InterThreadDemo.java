@@ -4,16 +4,19 @@ public class InterThreadDemo {
 	public static void main(String[] args) {
 		final Customer2 c = new Customer2();
 		new Thread() {
+			@Override
 			public void run() {
 				c.withdraw(15000);
 			}
 		}.start();
 		new Thread() {
+			@Override
 			public void run() {
 				c.deposit(10000);
 			}
 		}.start();
 		new Thread() {
+			@Override
 			public void run() {
 				c.deposit(10000);
 			}

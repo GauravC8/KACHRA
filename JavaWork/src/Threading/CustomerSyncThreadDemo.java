@@ -33,6 +33,7 @@ public class CustomerSyncThreadDemo {
 		final Customers c = new Customers();
 
 		Thread t1 = new Thread() {
+			@Override
 			public void run() {
 				c.withdraw(5000);
 				System.out.println("After withdraw amount is " + c.amount);
@@ -40,6 +41,7 @@ public class CustomerSyncThreadDemo {
 		};
 
 		Thread t2 = new Thread() {
+			@Override
 			public void run() {
 				c.deposit(9000);
 				System.out.println("After deposit amount is " + c.amount);

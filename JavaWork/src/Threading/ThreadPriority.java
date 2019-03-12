@@ -1,5 +1,6 @@
 package Threading;
 class X extends Thread {
+	@Override
 	public void run() {
 		System.out.println("Thread x Started");
 		for (int i = 0; i < 5; i++) {
@@ -10,6 +11,7 @@ class X extends Thread {
 }
 
 class Y extends Thread {
+	@Override
 	public void run() {
 		System.out.println("Thread Y started");
 		for (int i = 0; i < 5; i++) {
@@ -20,6 +22,7 @@ class Y extends Thread {
 }
 
 class Z extends Thread {
+	@Override
 	public void run() {
 		System.out.println("Thread Z started");
 		for (int i = 0; i < 5; i++) {

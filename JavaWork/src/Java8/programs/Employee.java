@@ -11,7 +11,8 @@ public class Employee {
 	    return a1.name.compareTo(a2.name);
 	  }
 	    
-	  public String toString() {
+	  @Override
+	public String toString() {
 	    return name;
 	  }
 }
