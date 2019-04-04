@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>HTML5 and CSS3 Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		form {
+			width: 400px;
+			margin: 0px auto;
+		}
+		input {
+			display: block;
+		}
+		
+		input:not([type=submit]):invalid {
+			background-color: #ffdddd;
+		}
+		
+		input:not([type=submit]):valid {
+			background-color: #ddffdd;
+		}
+		
+		input:not([type=submit]):invalid:required {
+			background: #ffdddd url('http://www.developerdrive.com/wp-content/uploads/2013/08/asterisk1.png') no-repeat right top; 
+		}
+		
+		input:not([type=submit]):valid:required {
+			background: #ddffdd url('http://www.developerdrive.com/wp-content/uploads/2013/08/asterisk1.png') no-repeat right top; 
+		}
+
+		input:not([type=submit]):optional {
+			background-color: #add1ef;
+		}
+
+	</style>	
+</head>
+<body>
+    <div id="page">
+        <section id="signup">
+			<header>Sign up to the website!</header>
+			
+			<form name="signup-form">
+				<label for="firstname">Firstname:</label>
+				<input id="firstname" name="firstname" type="text" title="Please enter your firstname" placeholder="Jonny" autofocus required />
+				
+				<label for="surname">Surname:</label>
+				<input id="surname" name="surname" type="text" title="Please enter your surname" placeholder="Schnittger" required />
+				
+				<label for="email">Email:</label>
+				<input id="email" name="email" type="email" title="Please enter your email address" placeholder="jonny@schnittger.me" required />
+				
+				<label for="website">Website:</label>
+				<input id="website" name="website" type="url" title="Please enter the url to your website (optional)" placeholder="http://schnittger.me" />
+				
+				<label for="password">Password:</label>
+				<input id="password" name="password" type="password" title="Please enter a password, it must contain at least 1 lowercase and 1 uppercase character and be at least 6 characters in length" pattern="^.*(?=.{6,})(?=.*[a-z])(?=.*[A-Z]).*$" placeholder="******" required />
+				
+				<input type="submit" value="Signup!" />
+
+			</form>
+		</section>
+    </div>   
+</body>
+</html>

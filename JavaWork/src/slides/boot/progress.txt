@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Test</title>
+<style>
+
+.image1 img{
+   height:300px;
+   width:1250px;
+   border-style:solid;
+   border-color:#287EC7;
+   
+}
+
+.image2 img{
+     height:400px;
+     width:400px;
+     border-style:solid;
+     border-color:orange;
+}
+
+.image2 h2{
+       color:blue;
+       
+}
+
+
+
+aside{
+     float:right;
+     margin-right:200px;
+     margin-bottom:500px;
+}
+</style>
+</head>
+<body style="background-color:powderblue;">
+<div class="image1">
+<img src="file:///C:/Users/Training/eclipse-workspace/Core%20Java/HtmlDemo/WebContent/Images/img.jpg" alt="image" >
+</div>
+
+
+
+<div class="image2">
+<h3>The nature is a beautiful picture to capture and take moments.....</h3>
+<h2>This image is awesome</h2> 
+<img src="file:///C:/Users/Training/eclipse-workspace/Core%20Java/HtmlDemo/WebContent/Images/img3.jpg" alt="image">
+
+<img src="file:///C:/Users/Training/eclipse-workspace/Core%20Java/HtmlDemo/WebContent/Images/img5.jpg" alt="image">
+ 
+
+<aside> 
+ <h1> hi</h1>
+  <h2>hello</h2>
+</aside>
+
+</div>
+
+
+<footer>
+  <h1 align="center">weather is nice</h1>
+</footer>
+
+</body>
+</html>

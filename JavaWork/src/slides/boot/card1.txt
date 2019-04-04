@@ -1,0 +1,11 @@
+<div class="card" style="max-width: 202px;">
+
+<!-- Image -->
+<img class="card-img-top" src="/images/sunset.jpg" alt="Photo of sunset">
+
+<!-- Text Content -->
+<div class="card-body">
+<p class="card-text">Well it was good while it lasted...</p>
+</div>
+
+</div>
