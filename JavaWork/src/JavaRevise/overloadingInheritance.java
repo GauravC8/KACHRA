@@ -1,13 +1,10 @@
 class Parent
 {
-	void disp()
+	static void disp()
 	{
 		System.out.println("Parent");
 	}
-}
-class Child
-{
-	void disp(int a)
+	static void disp(int a)
 	{
 		System.out.println("Child");
 	}
@@ -15,8 +12,7 @@ class Child
 public class overloadingInheritance {
 
 	public static void main(String[] args) {
-		Child c = new Child();
-		c.disp();
+		Parent c = new Parent();
 		c.disp(100);
 	}
 }
