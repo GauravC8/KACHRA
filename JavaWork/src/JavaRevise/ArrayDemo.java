@@ -1,16 +1,23 @@
-import java.util.Scanner;
+package JavaWork.src.JavaRevise;
+
 import java.util.ArrayList;
-class ArrayDemo
+import java.util.Scanner;
+
+public class ArrayDemo
 {
    public static void main(String[] args) {
-      ArrayList<Integer> arr = new ArrayList<Integer>();
-      Scanner s = new Scanner(System.in);
-      int num = s.nextInt();
-      for(int i=0;i<num;i++)
+	   byte ch;
+      ArrayList arr = new ArrayList();
+      try(Scanner s = new Scanner(System.in))
       {
-         arr.add(s.nextInt());
+     do
+      {
+         arr.add(s.next());
+         System.out.println("wanna cont...");
+          ch = s.nextByte();
+      }while(ch == 1);
       }
-      for(Integer i:arr)
+      for(Object i:arr)
       {System.out.print(i);}
 
    }
